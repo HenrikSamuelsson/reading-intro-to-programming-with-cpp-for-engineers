@@ -34,4 +34,4 @@ Iteration 3:
     a <- 17
 ```
 
-In iteration 3 b becomes 0 which is the condition to stop iterating, a is now 17, the GCD of 255 and 221 is hence 17.
+In iteration 3 we have a result because b becomes 0, the condition to stop iterating, a is now 17. The GCD of 255 and 221 is hence 17.
