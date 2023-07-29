@@ -6,12 +6,14 @@ The *greatest common divisor* (GCD) of two positive integers a and b is the larg
 Input: Two positive integers a, b
 Output: GCD(a, b)
 
-while b != 0
+while b not equal to 0
     tmp <- b
-    b <- a % b
+    b <- a modulo b
     a <- tmp
 return a
 ```
+
+(Modulo is the remainder when dividing two numbers. For example 25 divided by 7 would yield 3 as the whole part and a remainder of 4.)
 
 ## (a)
 
