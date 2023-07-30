@@ -43,3 +43,6 @@ Iteration 3:
 ```
 
 In iteration 3 b becomes 0 meaning tha we have the final result this is the condition to stop iterating. The result is stored in a that is now 17. The conclusion is that GCD of 255 and 221 is hence 17.
+
+## (b)
+
