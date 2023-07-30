@@ -46,3 +46,20 @@ In iteration 3 b becomes 0 meaning tha we have the final result this is the cond
 
 ## (b)
 
+## (c)
+
+Results from test runs of the program in part (c):
+
+```txt
+GCD Calculator    
+Enter an integer: 255
+Enter an integer: 221
+GCD(255, 221) = 17
+```
+
+```txt
+GCD Calculator
+Enter an integer: 8
+Enter an integer: 12
+GCD(8, 12) = 4
+```
