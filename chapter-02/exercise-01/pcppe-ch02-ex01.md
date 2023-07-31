@@ -48,7 +48,7 @@ In iteration 3 b becomes 0 meaning tha we have the final result this is the cond
 
 An implementation of the Euclidean algorithm in C++:
 
-<https://github.com/HenrikSamuelsson/reading-intro-to-programming-with-cpp-for-engineers/blob/8aed4805db804ec2aec2c93df48e443c33bc4482/chapter-02/exercise-01/pcppe-ch02-ex01-main.cpp#L1-L26>
+<https://github.com/HenrikSamuelsson/reading-intro-to-programming-with-cpp-for-engineers/blob/a3adf65c87bad522911ce54109c961669c212632/chapter-02/exercise-01/pcppe-ch02-ex01-main.cpp#L1-L26>
 
 ## (c)
 
