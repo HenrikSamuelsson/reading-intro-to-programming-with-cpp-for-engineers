@@ -7,8 +7,8 @@ int main() {
     int a {};
     std::cin >> a;
 
-    int b {};
     std::cout << "Enter an integer: ";
+    int b {};
     std::cin >> b;
 
     std::cout << "GCD(" << a << ", " << b << ") = ";
