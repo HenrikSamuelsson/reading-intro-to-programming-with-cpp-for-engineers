@@ -23,7 +23,7 @@ Another way to grasp the modulo concept is the fact that 7 times 3 is 21 and if 
 
 ## (a)
 
-The Euclidean algorithm can be used manually below is an example to calculate the GCD for a = 255 and b = 221 by iteratively doing the calculations inside the while part.
+The Euclidean algorithm can be used manually to calculate the GCD. Below is an example where the GCD for a = 255 and b = 221 is deduced by iteratively doing the calculations inside the while part of the algorithm.
 
 ```txt
 Iteration 1:
@@ -45,6 +45,10 @@ Iteration 3:
 In iteration 3 b becomes 0 meaning tha we have the final result this is the condition to stop iterating. The result is stored in a that is now 17. The conclusion is that GCD of 255 and 221 is hence 17.
 
 ## (b)
+
+An implementation of the Euclidean algorithm in C++:
+
+<https://github.com/HenrikSamuelsson/reading-intro-to-programming-with-cpp-for-engineers/blob/8aed4805db804ec2aec2c93df48e443c33bc4482/chapter-02/exercise-01/pcppe-ch02-ex01-main.cpp#L1-L26>
 
 ## (c)
 
