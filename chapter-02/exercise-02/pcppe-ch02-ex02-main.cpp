@@ -8,8 +8,8 @@ int main()
     int x{};
     std::cin >> x;
 
-    double lower_bound{1};
-    double upper_bound{x / 2};
+    double lower_bound{1.0};
+    double upper_bound{x / 2.0};
     double mid_val{};
 
     while (upper_bound >= lower_bound)
