@@ -23,4 +23,4 @@ Comparison of values produced by the bisection approximation to the actual squar
 | 13   | 2.812     | 3.605       |
 | 21   | 5.031     | 4.583       |
 
-The bisection algorithm will usually be at least close, but note that it for examples approximates square root of 8 to be larger than square root 13.
+The bisection algorithm will usually be at least close, but note that it for examples approximates square root of 8 to be larger than square root of 13.
