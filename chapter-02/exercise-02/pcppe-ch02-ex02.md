@@ -13,7 +13,7 @@ Implementation of bisection algorithm for computing a approximation of the squar
 Comparison of values produced by the bisection approximation to the actual square root:
 
 |  x   | bisection | square root |
-|---   |---        |---          |
+| ---  | ---       | ---         |
 | 0    | 0.500     | 0.000       |
 | 1    | 0.750     | 1.000       |
 | 2    | 1.500     | 1.414       |
@@ -22,5 +22,7 @@ Comparison of values produced by the bisection approximation to the actual squar
 | 8    | 3.125     | 2.828       |
 | 13   | 2.812     | 3.605       |
 | 21   | 5.031     | 4.583       |
+
+*Table: Comparison between square root approximation and actual values.*
 
 The bisection algorithm will usually be at least close, but note that it for examples approximates square root of 8 to be larger than square root of 13.
