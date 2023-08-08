@@ -8,7 +8,6 @@ using std::cout, std::cin, std::endl;
 //
 int main()
 {
-    // ----------------------------------------------------
     cout << "Enter the initial amount to invest: " << endl;
     double C_0{};
     cin >> C_0;
@@ -19,7 +18,6 @@ int main()
         return -1;
     }
 
-    // -------------------------------------------
     cout << "Enter the annual rate [% per 12 months]: " << endl;
     double r{};
     cin >> r;
@@ -29,19 +27,22 @@ int main()
         return -1;
     }
 
-    // -------------------------------------------
     cout << "Compound frequency is a period in months between computing interest" << endl;
     cout << "(e.g. if 2 times a year, enter 6)" << endl;
     cout << "If you don't know, enter 12 for a yearly compound frequency." << endl;
     cout << "Enter the compound frequency [months 1-72]: " << endl;
     double t{};
-    cin >> t;
+    if (!(cin >> t))
+    {
+        cout << "Error in entering of compound frequency, exiting..." << endl;
+        return -1;
+    }
     if (t <= 0.0 || t > 72.0)
     {
         cout << "Wrong value, exiting..." << endl;
         return -1;
     }
-    // ---------------------------------------------------
+
     cout << "Enter the investment time [months 1-100]: " << endl;
     double m{};
     cin >> m;
@@ -50,9 +51,6 @@ int main()
         cout << "Wrong value, exiting..." << endl;
         return -1;
     }
-
-    // ------------------------------
-    // Do computations
 
     const double kMontsPerYear = 12.0;
     const double kPercentageDiv = 100.0;
