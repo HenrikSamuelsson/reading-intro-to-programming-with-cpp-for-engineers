@@ -10,8 +10,11 @@ int main()
 {
     cout << "Enter the initial amount to invest: " << endl;
     double C_0{};
-    cin >> C_0;
-
+    if (!(cin >> C_0))
+    {
+        cout << "Error in entering of initial amount to invest, exiting..." << endl;
+        return -1;
+    }
     if (C_0 <= 0.0)
     {
         cout << "Wrong value, exiting..." << endl;
