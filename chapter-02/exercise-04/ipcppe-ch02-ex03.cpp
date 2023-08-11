@@ -23,7 +23,11 @@ int main()
 
     cout << "Enter the annual rate [% per 12 months]: " << endl;
     double r{};
-    cin >> r;
+    if (!(cin >> r))
+    {
+        cout << "Error in entering of annual rate, exiting..." << endl;
+        return -1;
+    }
     if (r <= 0.0 || r >= 100.0)
     {
         cout << "Wrong value, exiting..." << endl;
@@ -48,8 +52,12 @@ int main()
 
     cout << "Enter the investment time [months 1-100]: " << endl;
     double m{};
-    cin >> m;
-    if (m <= 0.0 || m >= 100)
+    if (!(cin >> m))
+    {
+        cout << "Error in entering investment time, exiting..." << endl;
+        return -1;
+    }
+    if (m <= 0.0 || m > 100)
     {
         cout << "Wrong value, exiting..." << endl;
         return -1;
