@@ -4,9 +4,9 @@ double fahrenheitToCelsius(double temperatureInFahrenheit);
 
 int main()
 {
-    std::cout << "Temperature Converter Fahrenheit to Celsius" << std::endl;
-    std::cout << "Enter temperature in Celsius: ";
-
+    std::cout << "Temperature Converter - Fahrenheit to Celsius" << std::endl;
+    
+    std::cout << "Enter temperature in degrees Fahrenheit: ";
     double temperatureInFahrenheit{};
     std::cin >> temperatureInFahrenheit;
 
