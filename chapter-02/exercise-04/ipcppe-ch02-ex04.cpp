@@ -9,13 +9,13 @@ using std::cout, std::cin, std::endl;
 int main()
 {
     cout << "Enter the initial amount to invest: " << endl;
-    double C_0{};
-    if (!(cin >> C_0))
+    double initialAmount{};
+    if (!(cin >> initialAmount))
     {
         cout << "Error in entering of initial amount to invest, exiting..." << endl;
         return -1;
     }
-    if (C_0 <= 0.0)
+    if (initialAmount <= 0.0)
     {
         cout << "Wrong value, exiting..." << endl;
         return -1;
@@ -68,13 +68,13 @@ int main()
 
     double i = m / t; // compounding periods
 
-    double C_i = C_0 * std::pow((1.0 + (r / kPercentageDiv) / kMontsPerYear * t), i);
+    double C_i = initialAmount * std::pow((1.0 + (r / kPercentageDiv) / kMontsPerYear * t), i);
 
     cout << "Your balance before tax, after " << m;
     cout << " months of investment is: " << C_i << endl;
 
     // Compute the net income
-    double income = C_i - C_0;
+    double income = C_i - initialAmount;
     cout << "Your income is " << income << endl;
     const double kIncomeTax = 19.0; // 19%
     cout << "After " << kIncomeTax << "% tax deduction you get: ";
