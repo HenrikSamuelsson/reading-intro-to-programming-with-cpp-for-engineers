@@ -37,7 +37,7 @@ void letter_histogram(void)
     cout << endl;
 
     for (auto k{'a'}; k <= 'z'; ++k)
-        cout << k << " "; // Print all characters �a� to �z�
+        cout << k << " "; // Print all characters a to z
 
     cout << endl;
 
