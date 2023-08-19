@@ -18,7 +18,6 @@ int main()
     string in_str;
 
     cin >> in_str;
-    in_str = "AGH University of Science and Technology";
 
     for (auto c : in_str)    // c takes on successive letters from in_str.
     {
@@ -29,11 +28,11 @@ int main()
     }
     cout << endl;
 
-    for (auto c{'a'}; c <= 'z'; ++c) // c takes on codes from ’a’ to ’z’
+    for (char c{'a'}; c <= 'z'; ++c) // c takes on codes from ’a’ to ’z’
         cout << c << " ";            // Print all characters ’a’ to ’z’
 
     cout << endl;
 
-    for (auto h : histogram) // h takes on successive values of the histogram
-        cout << h << " ";    // Print histogram values
+    for (char h : histogram) // h takes on successive values of the histogram
+        cout << h + 'a' << " ";    // Print histogram values
 }
