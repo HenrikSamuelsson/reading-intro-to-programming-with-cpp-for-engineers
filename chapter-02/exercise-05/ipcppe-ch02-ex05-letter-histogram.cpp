@@ -16,14 +16,17 @@
 #include <iterator>
 
 // Listing them here allows omitting std::
-using std::cout, std::cin, std::endl;
-using std::string, std::vector;
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
+using std::vector;
 
 void letter_histogram(void)
 {
     // Make slot for each letter, from 'a' to 'z'
     // Initial count set to 0 for each.
-    std::vector histogram('z' - 'a' + 1, 0);
+    std::vector<char> histogram('z' - 'a' + 1, 0);
 
     std::string in_str;
 
@@ -50,7 +53,7 @@ void letter_histogram(void)
 // 2nd version using the ST algorithms
 void letter_histogram_stl(void)
 {
-    std::vector histogram('z' - 'a' + 1, 0);
+    std::vector<char> histogram('z' - 'a' + 1, 0);
 
     std::string in_str;
 
